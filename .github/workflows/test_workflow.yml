@@ -1,0 +1,15 @@
+name: GitHub Actions CI
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - main
+jobs:
+  mysite-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - name: Test
+        run: echo test
