@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   mysite-ci:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
